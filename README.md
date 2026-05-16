@@ -1,4 +1,4 @@
-# VL Estética & Fisioterapia — Landing Page
+# VL Estética & Fisioterapia – Static Frontend Landing Page
 
 ---
 
@@ -6,132 +6,146 @@
 
 ## 📌 Sobre o projeto
 
-Este projeto é uma landing page institucional desenvolvida para a clínica **VL Estética & Fisioterapia**, com foco em apresentar serviços, equipe, depoimentos e facilitar o contato direto com clientes.
+Este projeto consiste na versão **frontend estática institucional** da landing page da clínica **VL Estética & Fisioterapia**.
 
-O objetivo principal é unir **design moderno, performance, acessibilidade e escalabilidade futura**, permitindo evolução natural para backend em PHP.
+O foco desta aplicação é fornecer uma experiência moderna, responsiva, performática e acessível, utilizando exclusivamente tecnologias frontend.
+
+Esta versão foi desenvolvida para deploy estático via GitHub Pages e serve como base visual independente da futura aplicação backend.
 
 ---
 
 ## 🎯 Objetivos
 
 - Criar uma landing page moderna e responsiva
-- Garantir performance e leveza no carregamento
+- Garantir alta performance e carregamento rápido
 - Estruturar CSS modular e escalável
 - Implementar UX fluida com animações suaves
-- Preparar base para backend em PHP
-- Facilitar conversão (WhatsApp, ligação e localização)
+- Facilitar conversão via contato direto
+- Manter arquitetura frontend limpa e reutilizável
 
 ---
 
 ## 🧱 Arquitetura do projeto
 
-A estrutura de pastas está organizada de forma modular, separando responsabilidades:
+A estrutura de pastas segue organização modular para separação de responsabilidades e manutenção escalável.
 
-> 📌 A estrutura visual completa está documentada no print do projeto (referência principal da arquitetura).
+> 📌 A estrutura visual completa está documentada no print da arquitetura do projeto.
 
 ![Arquitetura do Projeto](./assets/docs/structure.png)
 
-### Organização geral:
+### Organização geral
 
 - `/css`
   - base (reset, variables, typography, globals)
   - layout (header, footer, grid)
   - components (buttons, cards, slider)
-  - sections (hero, services, team, etc.)
+  - sections (hero, services, testimonials, team)
   - utils (containers, spacing, helpers)
 
 - `/js`
-  - main.js (controle geral do frontend)
+  - main.js (lógica global do frontend)
   - slider.js (carrossel de serviços)
-  - future modules (accessibility, animations)
+  - modules futuros (animações e acessibilidade)
 
 - `/assets`
   - imagens otimizadas WebP
-  - ícones e mídia
-
-- `/php` *(estrutura futura)*
-  - api/
-  - includes/
-  - components/
-  - forms/
+  - ícones
+  - mídia geral
 
 ---
 
 ## ⚙️ Tecnologias utilizadas
 
 - HTML5 semântico
-- CSS3 moderno (Flexbox + Grid)
+- CSS3 moderno
+- Flexbox + CSS Grid
 - JavaScript Vanilla
 - AOS (Animate On Scroll)
 - Google Fonts
-- Otimização de imagens (WebP)
-- Arquitetura modular CSS
+- WebP Optimization
+- Arquitetura CSS modular
 
 ---
 
 ## 🎨 Features
 
-- Header fixo com menu responsivo
+- Header fixo responsivo
+- Menu mobile acessível (ARIA)
 - Slider automático de serviços
-- Seção de equipe com layout responsivo
-- Depoimentos com grid responsivo
-- CTA com foco em conversão
-- Mapa com redirecionamento Google Maps
+- Seção de equipe responsiva
+- Grid de depoimentos
+- CTA focada em conversão
+- Integração com Google Maps
 - Footer completo com navegação e contatos
-- Menu mobile com acessibilidade (ARIA)
+- Scroll animations leves
 
 ---
 
 ## 📱 Responsividade
 
-O projeto foi desenvolvido com abordagem mobile-first, adaptando:
+O projeto utiliza abordagem mobile-first com adaptação para:
 
 - Smartphones
 - Tablets
-- Desktops
-- Telas grandes (Full HD+)
+- Notebooks
+- Monitores Full HD+
 
 ---
 
 ## 🚀 Performance
 
-- Lazy loading em imagens
+- Lazy loading de imagens
 - Uso de WebP
-- Animações leves
-- CSS modular para evitar redundância
-- JS vanilla sem dependências pesadas
-
----
-
-## 🔧 Futuro (PHP Backend)
-
-O projeto está preparado para evolução com:
-
-- Formulário de contato com envio de email
-- Estrutura de includes reutilizáveis
-- Possível painel administrativo
-- Expansão para sistema de agendamento
+- JavaScript leve sem frameworks
+- CSS modularizado
+- Estrutura otimizada para carregamento rápido
+- Baixo acoplamento entre componentes
 
 ---
 
 ## 🧠 Decisões técnicas
 
-- Separação modular de CSS para escalabilidade
-- JavaScript sem frameworks para leveza
-- Uso de animações leves para UX fluida
-- Estrutura pensada para crescimento backend
+- Separação modular de CSS
+- JavaScript Vanilla para maior performance
+- Estrutura desacoplada do backend
+- Organização escalável de assets
+- Componentização visual reutilizável
+
+---
+
+## 🌐 Deploy
+
+Este projeto foi estruturado para deploy frontend estático utilizando:
+
+- GitHub Pages
+- Hospedagem estática CDN
+- Deploy simples sem backend integrado
+
+---
+
+## 🔮 Expansões futuras
+
+A arquitetura visual poderá futuramente integrar:
+
+- Backend PHP
+- APIs externas
+- Sistema de agendamento
+- Formulários dinâmicos
+- Painel administrativo
+
+Essas funcionalidades serão mantidas em um repositório/backend separado.
 
 ---
 
 ## 📸 Interface
 
-A estrutura visual do projeto segue organização modular conforme print da arquitetura do sistema.
+A interface segue arquitetura visual modular focada em experiência moderna, acessibilidade e conversão.
 
 ---
 
 ## 📬 Contato
 
-Projeto desenvolvido para fins profissionais e institucionais.
+Projeto desenvolvido para fins institucionais e profissionais.
 
 ---
 
@@ -141,65 +155,63 @@ Projeto desenvolvido para fins profissionais e institucionais.
 
 ## 📌 About the project
 
-This project is an institutional landing page developed for **VL Estética & Fisioterapia**, focused on presenting services, team, testimonials, and enabling direct client contact.
+This project represents the **static institutional frontend version** of the landing page for **VL Estética & Fisioterapia**.
 
-The main goal is to combine **modern design, performance, accessibility, and future scalability**, allowing smooth evolution into a PHP backend.
+The application focuses on delivering a modern, responsive, performant, and accessible frontend experience using only frontend technologies.
+
+This version was designed for static deployment through GitHub Pages and works independently from any future backend implementation.
 
 ---
 
-## 🎯 Objectives
+## 🎯 Goals
 
 - Build a modern responsive landing page
 - Ensure high performance and fast loading
 - Create scalable modular CSS architecture
 - Implement smooth UX animations
-- Prepare backend foundation in PHP
-- Optimize conversion (WhatsApp, calls, location access)
+- Improve direct contact conversion
+- Maintain reusable frontend architecture
 
 ---
 
 ## 🧱 Project architecture
 
-The folder structure is organized modularly, separating responsibilities:
+The folder structure follows a modular organization focused on scalability and maintainability.
 
-> 📌 The full structure is visually documented in the project screenshot (main architectural reference).
+> 📌 The full visual structure is documented in the project architecture screenshot.
 
 ![Project Architecture](./assets/docs/structure.png)
 
-### General structure:
+### General structure
 
 - `/css`
   - base (reset, variables, typography, globals)
   - layout (header, footer, grid)
   - components (buttons, cards, slider)
-  - sections (hero, services, team, etc.)
+  - sections (hero, services, testimonials, team)
   - utils (containers, spacing, helpers)
 
 - `/js`
   - main.js (global frontend logic)
   - slider.js (services carousel)
-  - future modules (accessibility, animations)
+  - future modules (animations and accessibility)
 
 - `/assets`
   - optimized WebP images
-  - icons and media
-
-- `/php` *(future structure)*
-  - api/
-  - includes/
-  - components/
-  - forms/
+  - icons
+  - media assets
 
 ---
 
 ## ⚙️ Tech stack
 
-- HTML5 semantic structure
-- Modern CSS3 (Flexbox + Grid)
+- Semantic HTML5
+- Modern CSS3
+- Flexbox + CSS Grid
 - Vanilla JavaScript
 - AOS (Animate On Scroll)
 - Google Fonts
-- WebP image optimization
+- WebP Optimization
 - Modular CSS architecture
 
 ---
@@ -207,13 +219,14 @@ The folder structure is organized modularly, separating responsibilities:
 ## 🎨 Features
 
 - Fixed responsive header
-- Auto sliding services carousel
+- Accessible mobile menu (ARIA)
+- Automatic services slider
 - Responsive team section
 - Testimonials grid
-- Conversion-focused CTA section
+- Conversion-focused CTA
 - Google Maps integration
-- Full footer with navigation & contacts
-- Accessible mobile menu (ARIA support)
+- Full footer navigation
+- Lightweight scroll animations
 
 ---
 
@@ -223,47 +236,62 @@ Mobile-first approach supporting:
 
 - Smartphones
 - Tablets
-- Desktops
-- Large screens
+- Laptops
+- Full HD+ displays
 
 ---
 
 ## 🚀 Performance
 
 - Lazy-loaded images
-- WebP format usage
-- Lightweight animations
+- WebP image optimization
+- Lightweight Vanilla JS
 - Modular CSS structure
-- Vanilla JS (no heavy frameworks)
-
----
-
-## 🔧 Future (PHP Backend)
-
-Prepared for backend evolution:
-
-- Contact form with email sending
-- Reusable PHP includes structure
-- Admin panel (optional)
-- Appointment scheduling system
+- Fast-loading architecture
+- Low component coupling
 
 ---
 
 ## 🧠 Technical decisions
 
-- Modular CSS architecture for scalability
+- Modular CSS architecture
 - Vanilla JS for performance
-- Lightweight UX animations
-- Backend-ready structure design
+- Backend-independent structure
+- Scalable asset organization
+- Reusable visual components
+
+---
+
+## 🌐 Deployment
+
+This project was designed for static frontend deployment using:
+
+- GitHub Pages
+- Static CDN hosting
+- Simple deployment without backend integration
+
+---
+
+## 🔮 Future expansions
+
+The visual architecture may later integrate:
+
+- PHP backend
+- External APIs
+- Appointment scheduling system
+- Dynamic forms
+- Administrative dashboard
+
+These features will live in a separate backend repository.
 
 ---
 
 ## 📸 UI Reference
 
-The UI structure follows the modular system shown in the project architecture screenshot.
+The UI architecture follows a modular system focused on accessibility, performance, and conversion.
 
 ---
 
 ## 📬 Contact
 
-This project was built for professional and institutional purposes.
+Project built for professional and institutional purposes.
