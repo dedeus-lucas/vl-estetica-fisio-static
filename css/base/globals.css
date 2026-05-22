@@ -9,7 +9,13 @@ body {
     background-color: var(--color-secondary);
     color: var(--color-font);
     overflow-x: hidden;
+    padding-top: var(--header-height);
 }
+
+main {
+    min-height: calc(100vh - var(--header-height));
+}
+
 
 /* Selection */
 ::selection {

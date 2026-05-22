@@ -77,7 +77,7 @@
     SLIDER INTERACTION STATES
 ========================= */
 
-.services-slider.is-paused .services-wrapper {
+.services-slider.is-paused .services-track {
     animation-play-state: paused;
 }
 

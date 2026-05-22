@@ -15,7 +15,7 @@
 }
 
 .header-container {
-    min-height: 88px;
+    min-height: var(--header-height);
 
     display: flex;
     align-items: center;
@@ -163,8 +163,12 @@
 
 /* Mobile */
 @media (max-width: 768px) {
+    :root {
+        --header-height: 80px;
+    }
+
     .header-container {
-        min-height: 80px;
+        min-height: var(--header-height);
     }
 
     .mobile-menu-toggle {
@@ -174,7 +178,7 @@
     .nav {
         position: fixed;
 
-        top: 80px;
+        top: var(--header-height);
         left: 0;
 
         width: 100%;

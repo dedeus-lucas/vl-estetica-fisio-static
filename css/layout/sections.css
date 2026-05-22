@@ -444,10 +444,14 @@ section {
     .team-content {
         text-align: center;
         align-items: center;
+        width: 100%;
     }
 
     .member-bio {
+        width: min(100%, 560px);
+        margin-inline: auto;
         align-items: flex-start;
+        text-align: left;
     }
 
     .team-image {
@@ -599,5 +603,37 @@ section {
     .cta-subtitle,
     .location-subtitle {
         font-size: 1rem;
+    }
+}
+/* Mobile bio adjustments for better alignment */
+@media (max-width: 768px) {
+    .member-tag {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .member-name {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .member-role {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .member-bio {
+        justify-content: center;
+        width: 100%;
+        max-width: none;
+    }
+
+    .member-bio li {
+        text-align: left;
+        padding-left: 1.5rem;
+    }
+
+    .member-bio li::before {
+        top: 0.65rem;
     }
 }
