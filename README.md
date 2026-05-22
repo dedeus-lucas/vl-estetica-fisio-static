@@ -27,7 +27,7 @@ Esta versão foi desenvolvida para deploy estático via GitHub Pages e serve com
 
 ## 🧱 Arquitetura do projeto
 
-A estrutura de pastas segue organização modular para separação de responsabilidades e manutenção escalável.
+A estrutura de pastas segue padrão **SMACSS** (Scalable and Modular Architecture for CSS) para separação clara de responsabilidades e manutenção escalável.
 
 > 📌 A estrutura visual completa está documentada no print da arquitetura do projeto.
 
@@ -36,34 +36,33 @@ A estrutura de pastas segue organização modular para separação de responsabi
 ### Organização geral
 
 - `/css`
-  - base (reset, variables, typography, globals)
-  - layout (header, footer, grid)
-  - components (buttons, cards, slider)
-  - sections (hero, services, testimonials, team)
-  - utils (containers, spacing, helpers)
+  - **base/** (reset, variables, typography, globals) — Fundação e design tokens
+  - **layout/** (header, hero, sections, footer) — Estrutura macro da página
+  - **components/** (buttons, cards, slider, testimonials) — Componentes reutilizáveis
+  - **utilities/** (containers) — Helpers e utilidades
 
 - `/js`
-  - main.js (lógica global do frontend)
-  - slider.js (carrossel de serviços)
-  - modules futuros (animações e acessibilidade)
+  - **main.js** — lógica global, menu mobile, scroll spy
+  - **slider.js** — carrossel automático de serviços
 
 - `/assets`
-  - imagens otimizadas WebP
-  - ícones
-  - mídia geral
+  - **img/** — imagens otimizadas WebP
+  - **icons/** — ícones SVG
+  - **fonts/** — tipografias locais
+  - **docs/** — documentação visual
 
 ---
 
 ## ⚙️ Tecnologias utilizadas
 
 - HTML5 semântico
-- CSS3 moderno
-- Flexbox + CSS Grid
-- JavaScript Vanilla
+- CSS3 com arquitetura SMACSS
+- Flexbox + CSS Grid responsivo
+- JavaScript Vanilla (sem dependências)
 - AOS (Animate On Scroll)
-- Google Fonts
-- WebP Optimization
-- Arquitetura CSS modular
+- Google Fonts (Inter)
+- WebP com fallback
+- CSS Variables para design tokens
 
 ---
 
@@ -105,11 +104,12 @@ O projeto utiliza abordagem mobile-first com adaptação para:
 
 ## 🧠 Decisões técnicas
 
-- Separação modular de CSS
-- JavaScript Vanilla para maior performance
-- Estrutura desacoplada do backend
-- Organização escalável de assets
-- Componentização visual reutilizável
+- Arquitetura **SMACSS** com separação clara (Base/Layout/Components/Utilities)
+- JavaScript Vanilla para zero dependências e máxima performance
+- CSS Variables para tokens de design (cores, espaçamento, transições)
+- Estrutura completamente desacoplada do backend
+- Responsividade mobile-first com breakpoints em 768px e 992px
+- Header dinâmico com altura ajustável via CSS
 
 ---
 
@@ -176,7 +176,7 @@ This version was designed for static deployment through GitHub Pages and works i
 
 ## 🧱 Project architecture
 
-The folder structure follows a modular organization focused on scalability and maintainability.
+The folder structure follows **SMACSS pattern** (Scalable and Modular Architecture for CSS) for clear separation of concerns and scalable maintenance.
 
 > 📌 The full visual structure is documented in the project architecture screenshot.
 
@@ -185,34 +185,33 @@ The folder structure follows a modular organization focused on scalability and m
 ### General structure
 
 - `/css`
-  - base (reset, variables, typography, globals)
-  - layout (header, footer, grid)
-  - components (buttons, cards, slider)
-  - sections (hero, services, testimonials, team)
-  - utils (containers, spacing, helpers)
+  - **base/** (reset, variables, typography, globals) — Foundation and design tokens
+  - **layout/** (header, hero, sections, footer) — Page macro structure
+  - **components/** (buttons, cards, slider, testimonials) — Reusable components
+  - **utilities/** (containers) — Helpers and utilities
 
 - `/js`
-  - main.js (global frontend logic)
-  - slider.js (services carousel)
-  - future modules (animations and accessibility)
+  - **main.js** — global logic, mobile menu, scroll spy
+  - **slider.js** — automatic services carousel
 
 - `/assets`
-  - optimized WebP images
-  - icons
-  - media assets
+  - **img/** — optimized WebP images
+  - **icons/** — SVG icons
+  - **fonts/** — local typography
+  - **docs/** — visual documentation
 
 ---
 
 ## ⚙️ Tech stack
 
 - Semantic HTML5
-- Modern CSS3
-- Flexbox + CSS Grid
-- Vanilla JavaScript
+- CSS3 with SMACSS architecture
+- Responsive Flexbox + CSS Grid
+- Vanilla JavaScript (zero dependencies)
 - AOS (Animate On Scroll)
-- Google Fonts
-- WebP Optimization
-- Modular CSS architecture
+- Google Fonts (Inter)
+- WebP with fallback
+- CSS Variables for design tokens
 
 ---
 
@@ -254,11 +253,12 @@ Mobile-first approach supporting:
 
 ## 🧠 Technical decisions
 
-- Modular CSS architecture
-- Vanilla JS for performance
-- Backend-independent structure
-- Scalable asset organization
-- Reusable visual components
+- **SMACSS architecture** with clear separation (Base/Layout/Components/Utilities)
+- Vanilla JS for zero dependencies and maximum performance
+- CSS Variables for design tokens (colors, spacing, transitions)
+- Completely backend-independent structure
+- Mobile-first responsiveness with breakpoints at 768px and 992px
+- Dynamic header with adjustable height via CSS
 
 ---
 
